@@ -1,0 +1,215 @@
+.results-screen {
+  animation: fadeInUp 0.4s ease;
+}
+
+.results-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 500px) {
+  .results-header {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.results-score-circle {
+  display: flex;
+  align-items: baseline;
+  gap: 0.2rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius);
+  background: rgba(0,0,0,0.2);
+  border: 2px solid var(--grade-color, var(--accent));
+  box-shadow: 0 0 30px color-mix(in srgb, var(--grade-color, var(--accent)) 30%, transparent);
+  flex-shrink: 0;
+}
+
+.score-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--grade-color, var(--accent-light));
+  line-height: 1;
+}
+
+.score-divider {
+  font-size: 1.5rem;
+  color: var(--text-muted);
+}
+
+.score-total {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.results-info {
+  flex: 1;
+}
+
+.grade-badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.85rem;
+  border-radius: 99px;
+  border: 1px solid;
+  margin-bottom: 0.5rem;
+}
+
+.results-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.35rem;
+}
+
+.results-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.results-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
+  border: none;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 20px var(--accent-glow);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px var(--accent-glow);
+}
+
+.btn-secondary {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  border-color: var(--border-hover);
+  color: var(--text-primary);
+  transform: translateY(-2px);
+}
+
+.results-review {
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+}
+
+.review-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 1rem;
+}
+
+.review-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.review-item {
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+}
+
+.review-item.correct {
+  border-color: rgba(16, 185, 129, 0.25);
+}
+
+.review-item.wrong {
+  border-color: rgba(239, 68, 68, 0.25);
+}
+
+.review-item-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.review-icon {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.review-item.correct .review-icon { color: var(--success); }
+.review-item.wrong .review-icon { color: var(--error); }
+
+.review-q-num {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+.review-question {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
+
+.review-answers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.review-answer {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.review-answer-label {
+  font-weight: 700;
+  min-width: 100px;
+  flex-shrink: 0;
+}
+
+.selected-answer .review-answer-label { color: var(--text-muted); }
+.selected-answer span:last-child { color: var(--text-secondary); }
+
+.correct-answer .review-answer-label { color: var(--success); }
+.correct-answer span:last-child { color: var(--success); }

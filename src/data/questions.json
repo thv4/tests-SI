@@ -1,0 +1,1955 @@
+{
+  "temas": [
+    {
+      "id": 1,
+      "nombre": "Tema 1: Introducción a la IA",
+      "descripcion": "Definiciones y arquitecturas de agentes",
+      "preguntas": [
+        {
+          "id": 1,
+          "pregunta": "¿Cómo define la RAE la Inteligencia Artificial?",
+          "opciones": [
+            "Capacidad de dominar cosas y hombres",
+            "Disciplina que crea programas que ejecutan operaciones comparables a la mente humana",
+            "Sistemas diseñados por humanos para adquirir datos",
+            "Una meta compleja que percibe el entorno"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 2,
+          "pregunta": "¿Qué caracteriza a la IA subsimbólica?",
+          "opciones": [
+            "Utiliza fuentes de expertos humanos",
+            "Razona mediante inferencia lógica",
+            "Usa reglas y hechos explícitos",
+            "Se basa en el conocimiento implícito aprendido de datos"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 3,
+          "pregunta": "En la estructura de un agente, ¿qué componente activa los actuadores?",
+          "opciones": [
+            "Componente de selección de acciones",
+            "Sensores",
+            "Componente de acción",
+            "Componente de percepción"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 4,
+          "pregunta": "¿Qué define a un agente basado en modelos?",
+          "opciones": [
+            "Mantiene un estado interno sobre la evolución del mundo",
+            "Busca maximizar un valor numérico de bondad",
+            "Selecciona acciones basadas solo en percepciones actuales",
+            "Sigue una secuencia de acciones para metas"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 5,
+          "pregunta": "Un entorno es 'estocástico' cuando: ",
+          "opciones": [
+            "El estado actual se conoce con certeza",
+            "El estado final depende de un elemento aleatorio",
+            "El entorno no cambia mientras se decide",
+            "Cada acción tiene un resultado predecible"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 6,
+          "pregunta": "¿Qué significa que un entorno sea 'estático'?",
+          "opciones": [
+            "El entorno no cambia mientras el agente decide",
+            "Solo hay un agente en el sistema",
+            "El estado es parcialmente observable",
+            "El agente no puede moverse"
+          ],
+          "correcta": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Tema 2: Resolución de Problemas y Búsqueda",
+      "descripcion": "Espacios de estados y exploración",
+      "preguntas": [
+        {
+          "id": 1,
+          "pregunta": "¿Cuáles son los componentes de un problema de búsqueda?",
+          "opciones": [
+            "Sensores, actuadores, programa y arquitectura",
+            "Entrada, proceso, salida y control",
+            "Estado inicial, acciones, transición, meta y coste",
+            "Percepción, razonamiento y acción"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 2,
+          "pregunta": "En la formulación de búsqueda, ¿qué es el 'Test de meta'?",
+          "opciones": [
+            "Determinar si un estado es una meta aceptable",
+            "La secuencia de acciones del estado inicial",
+            "La suma de costes de acciones",
+            "El grafo dirigido de estados"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 3,
+          "pregunta": "¿Qué ventaja tiene la búsqueda local frente a la sistemática?",
+          "opciones": [
+            "Garantiza la solución óptima siempre",
+            "Usa una cantidad de memoria generalmente constante",
+            "Mantiene todos los caminos en memoria",
+            "Explora el grafo de forma exhaustiva"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 4,
+          "pregunta": "En la búsqueda local, los caminos recorridos hacia la meta:",
+          "opciones": [
+            "No se retienen",
+            "Se guardan en una pila",
+            "Son vitales para el aprendizaje",
+            "Se retienen para evitar ciclos"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 5,
+          "pregunta": "La búsqueda local es especialmente apta para: ",
+          "opciones": [
+            "Entornos parcialmente observables",
+            "Problemas de optimización",
+            "Sistemas basados en reglas",
+            "Problemas con pocos estados"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 6,
+          "pregunta": "¿Cuándo NO es adecuada una estrategia de búsqueda clásica?",
+          "opciones": [
+            "Cuando el entorno es estático",
+            "Cuando el estado es completamente observable",
+            "Cuando las acciones tienen resultados inciertos",
+            "Cuando el entorno es determinista"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 7,
+          "pregunta": "¿Qué técnica se usa para entornos multiagente?",
+          "opciones": [
+            "Procesos de Markov",
+            "Búsqueda adversaria",
+            "Búsqueda AND-OR",
+            "Aprendizaje por refuerzo"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 8,
+          "pregunta": "El espacio de estados se define implícitamente por: ",
+          "opciones": [
+            "La prueba de meta únicamente",
+            "Los sensores del agente",
+            "El estado inicial, acciones y modelo de transición",
+            "La función de coste"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 9,
+          "pregunta": "¿Qué es la 'Formulación del problema' en un agente?",
+          "opciones": [
+            "Establecer metas",
+            "Obtener una representación abstracta basada en estados y acciones",
+            "Maximizar el rendimiento",
+            "Llevar a cabo las acciones"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 10,
+          "pregunta": "En la búsqueda básica, si un estado ya ha sido explorado:",
+          "opciones": [
+            "Se cambia el test de meta",
+            "Se termina el proceso",
+            "Se borra la memoria",
+            "Se vuelve a la siguiente acción aplicable"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 11,
+          "pregunta": "¿Qué representa la función de coste del camino?",
+          "opciones": [
+            "Un valor numérico que refleja la medida de rendimiento",
+            "El número de nodos en la frontera",
+            "La probabilidad de éxito",
+            "La dirección del proceso"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 12,
+          "pregunta": "En el problema de los cubos de agua, 'Llenar A' es:",
+          "opciones": [
+            "Un modelo de transición",
+            "Un estado inicial",
+            "Una precondición",
+            "Una acción"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 13,
+          "pregunta": "La búsqueda sistemática se diferencia de la local en que:",
+          "opciones": [
+            "No hay diferencia real",
+            "La local garantiza completitud",
+            "La sistemática mantiene múltiples caminos en memoria",
+            "La sistemática usa menos memoria"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 14,
+          "pregunta": "¿Qué caracteriza a un entorno 'discreto'?",
+          "opciones": [
+            "Hay infinitas acciones",
+            "Los estados y acciones son finitos",
+            "El tiempo es continuo",
+            "La observación es ruidosa"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 15,
+          "pregunta": "Un agente 'solucionador de problemas' busca ante todo:",
+          "opciones": [
+            "Aprender de datos",
+            "Sustituir al humano",
+            "Comunicarse con otros agentes",
+            "Maximizar una medida de rendimiento/meta"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 16,
+          "pregunta": "La estrategia de 'Enfriamiento simulado' es un algoritmo de:",
+          "opciones": [
+            "Búsqueda en profundidad",
+            "Planificación jerárquica",
+            "Búsqueda adversaria",
+            "Búsqueda local"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 17,
+          "pregunta": "En búsqueda local, el 'máximo global' es:",
+          "opciones": [
+            "El mejor estado según la función objetivo",
+            "El estado con más vecinos",
+            "El estado inicial",
+            "El primer estado encontrado"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 18,
+          "pregunta": "La búsqueda AND-OR se aplica en:",
+          "opciones": [
+            "Problemas de clasificación",
+            "Redes neuronales",
+            "Entornos deterministas",
+            "Entornos no deterministas"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 19,
+          "pregunta": "¿Qué significa que una solución sea 'óptima'?",
+          "opciones": [
+            "Es la que usa más memoria",
+            "Es la primera que se encuentra",
+            "Es la de menor coste entre todas las soluciones",
+            "Es la que tiene más acciones"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 20,
+          "pregunta": "En entornos parcialmente observables, el agente maneja:",
+          "opciones": [
+            "Creencias sobre estados",
+            "Reglas estáticas",
+            "Estados únicos",
+            "Costes negativos"
+          ],
+          "correcta": 0
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nombre": "Tema 3: Representación del Conocimiento",
+      "descripcion": "Agentes lógicos y mundos virtuales",
+      "preguntas": [
+        {
+          "id": 1,
+          "pregunta": "¿Qué es la Base de Conocimiento (KB)?",
+          "opciones": [
+            "Interfaz de usuario",
+            "Hardware del agente",
+            "Un conjunto de sentencias en un lenguaje formal",
+            "Un programa secuencial"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 2,
+          "pregunta": "¿Cuál es la función del Motor de Inferencias (MI)?",
+          "opciones": [
+            "Algoritmos independientes del dominio para derivar nuevas sentencias",
+            "Construir el hardware",
+            "Almacenar datos brutos",
+            "Activar los sensores"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 3,
+          "pregunta": "En un agente basado en conocimiento, la operación TELL:",
+          "opciones": [
+            "Borra el conocimiento previo",
+            "Le dice a la KB lo que percibe",
+            "Pregunta a la KB qué hacer",
+            "Ejecuta una acción física"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 4,
+          "pregunta": "La operación ASK en la KB se usa para:",
+          "opciones": [
+            "Añadir hechos",
+            "Consultar qué acción debe realizar",
+            "Reiniciar el sistema",
+            "Medir el rendimiento"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 5,
+          "pregunta": "En el Mundo Wumpus, ¿qué percibe el agente ante una fosa adyacente?",
+          "opciones": [
+            "Brillo",
+            "Hedor",
+            "Grito",
+            "Brisa"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 6,
+          "pregunta": "En el Mundo Wumpus, el sensor de 'Brillo' indica:",
+          "opciones": [
+            "Presencia de una fosa",
+            "Cercanía a una pared",
+            "Presencia del oro",
+            "Presencia del Wumpus"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 7,
+          "pregunta": "¿Qué define la 'Sintaxis' en un lenguaje de representación?",
+          "opciones": [
+            "La verdad de la sentencia",
+            "La estructura formal de las sentencias",
+            "La utilidad del conocimiento",
+            "El coste de inferencia"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 8,
+          "pregunta": "La 'Semántica' se ocupa de:",
+          "opciones": [
+            "La verdad de cada sentencia en modelos posibles del mundo",
+            "La memoria del agente",
+            "Cómo se escriben las reglas",
+            "La velocidad del motor de inferencia"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 9,
+          "pregunta": "Un agente lógico utiliza el mecanismo inferencial para:",
+          "opciones": [
+            "Inferir nueva información para tomar decisiones",
+            "Limpiar los datos ruidosos",
+            "Percibir mejor",
+            "Simular el comportamiento biológico"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 10,
+          "pregunta": "¿Cuál es una función del Motor de Inferencias?",
+          "opciones": [
+            "Diseñar el entorno",
+            "Cifrar la base de datos",
+            "Actuar como sensor",
+            "Actualizar la memoria activa (hechos, metas)"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 11,
+          "pregunta": "La estrategia de control en el MI determina:",
+          "opciones": [
+            "Qué regla disparar",
+            "El lenguaje de programación",
+            "La capacidad de los actuadores",
+            "El número de fosas"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 12,
+          "pregunta": "En lógica proposicional, una sentencia es verdadera si:",
+          "opciones": [
+            "Su sintaxis es correcta",
+            "El experto lo dice",
+            "Es verdadera en un modelo dado del mundo",
+            "No tiene símbolos"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 13,
+          "pregunta": "¿Qué indica el sensor de 'Golpe' en el Mundo Wumpus?",
+          "opciones": [
+            "Choque con una pared",
+            "Muerte del Wumpus",
+            "Ataque del Wumpus",
+            "Caída en fosa"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 14,
+          "pregunta": "En el Mundo Wumpus, el entorno es:",
+          "opciones": [
+            "Multiagente",
+            "Parcialmente observable (percepción local)",
+            "Continuo",
+            "Completamente observable"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 15,
+          "pregunta": "¿Qué es un 'modelo' en lógica?",
+          "opciones": [
+            "Una regla de inferencia",
+            "Una asignación de verdad a los símbolos",
+            "Un dibujo del agente",
+            "Un tipo de sensor"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 16,
+          "pregunta": "La inferencia permite:",
+          "opciones": [
+            "Eliminar la KB",
+            "Derivar nuevas sentencias de las existentes",
+            "Copiar datos",
+            "Reducir el tiempo de percepción"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 17,
+          "pregunta": "¿Qué caracteriza a la aproximación declarativa?",
+          "opciones": [
+            "Ignorar la base de conocimiento",
+            "Decirle al agente lo que necesita saber",
+            "Usar solo actuadores",
+            "Programar cada paso"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 18,
+          "pregunta": "En el Mundo Wumpus, el agente muere si:",
+          "opciones": [
+            "Grita",
+            "Entra en casilla con fosa o wumpus vivo",
+            "Dispara su flecha",
+            "Entra en casilla con wumpus muerto"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 19,
+          "pregunta": "El nivel de conocimiento de un agente se refiere a: ",
+          "opciones": [
+            "Lo que sabe, independiente de la implementación",
+            "Sus estructuras de datos",
+            "Su hardware",
+            "Su velocidad de procesamiento"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 20,
+          "pregunta": "¿Qué permite al agente wumpus salir de la cueva?",
+          "opciones": [
+            "La acción Agarrar",
+            "La acción Disparar",
+            "Matar al wumpus",
+            "La acción Escalar"
+          ],
+          "correcta": 3
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nombre": "Tema 4: Modelos de Razonamiento",
+      "descripcion": "Razonamiento categórico y probabilístico",
+      "preguntas": [
+        {
+          "id": 1,
+          "pregunta": "¿Cómo se define razonar en IA?",
+          "opciones": [
+            "Percibir colores",
+            "Inferir conclusiones de conocimiento previo y evidencia",
+            "Mover actuadores",
+            "Almacenar datos"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 2,
+          "pregunta": "Un objetivo fundamental de este tema es entender que:",
+          "opciones": [
+            "La lógica es perfecta para todo",
+            "No existen modelos de razonamiento",
+            "La incertidumbre es inevitable en el mundo real",
+            "Las máquinas no pueden inferir"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 3,
+          "pregunta": "El razonamiento bayesiano se usa para:",
+          "opciones": [
+            "Acelerar la percepción",
+            "Eliminar el conocimiento",
+            "Gestionar la incertidumbre",
+            "Sustituir la memoria"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 4,
+          "pregunta": "En el modelo categórico, si R1 indica i(2) implica m(1):",
+          "opciones": [
+            "Se añaden más dudas",
+            "Se ignora la evidencia",
+            "Se detiene el razonamiento",
+            "Se eliminan casos incompatibles de la base"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 5,
+          "pregunta": "¿Qué son las redes bayesianas?",
+          "opciones": [
+            "Un tipo de sensor",
+            "Evolución estructurada para gestionar incertidumbre",
+            "Sistemas sin lógica",
+            "Redes de cables físicos"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 6,
+          "pregunta": "La evidencia observada en razonamiento se usa para:",
+          "opciones": [
+            "Ignorar el pasado",
+            "Dibujar mapas",
+            "Crear hardware",
+            "Cambiar conclusiones previas"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 7,
+          "pregunta": "El modelo categórico básico se basa en:",
+          "opciones": [
+            "Probabilidades",
+            "Algoritmos genéticos",
+            "Redes neuronales",
+            "Asignaciones binarias/lógicas"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 8,
+          "pregunta": "La incertidumbre surge porque:",
+          "opciones": [
+            "Los sensores son perfectos",
+            "La IA es mágica",
+            "No hay memoria",
+            "El conocimiento del mundo es incompleto o ruidoso"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 9,
+          "pregunta": "En inferencia, la conclusión depende de:",
+          "opciones": [
+            "La velocidad de búsqueda",
+            "Solo la suerte",
+            "El color del agente",
+            "Evidencia y conocimiento previo"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 10,
+          "pregunta": "Las redes bayesianas permiten representar:",
+          "opciones": [
+            "Relaciones de dependencia causal y probabilística",
+            "Texto plano",
+            "Solo hechos ciertos",
+            "Circuitos eléctricos"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 11,
+          "pregunta": "El razonamiento probabilístico es superior al categórico cuando:",
+          "opciones": [
+            "Hay certeza absoluta",
+            "Existe ambigüedad o datos incompletos",
+            "No hay datos",
+            "El problema es pequeño"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 12,
+          "pregunta": "¿Qué permite la corrección bayesiana?",
+          "opciones": [
+            "Borrar la KB",
+            "Predecir el futuro sin datos",
+            "Sustituir al agente",
+            "Actualizar la probabilidad de una hipótesis ante nueva evidencia"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 13,
+          "pregunta": "En el ejemplo de diagnóstico, el razonamiento ayuda a: ",
+          "opciones": [
+            "Crear nuevos virus",
+            "Ignorar la medicina",
+            "Olvidar los síntomas",
+            "Identificar causas a partir de síntomas"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 14,
+          "pregunta": "Un sistema que razona debe ser capaz de:",
+          "opciones": [
+            "Tener sentimientos",
+            "Explicar sus conclusiones",
+            "Gastar mucha energía",
+            "Correr rápido"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 15,
+          "pregunta": "La evidencia en un modelo bayesiano:",
+          "opciones": [
+            "Aumenta el caos",
+            "No influye",
+            "Es opcional",
+            "Reduce la incertidumbre"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 16,
+          "pregunta": "El razonamiento en IA es un proceso:",
+          "opciones": [
+            "Manual",
+            "Aleatorio",
+            "Estático",
+            "Dinámico de inferencia"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 17,
+          "pregunta": "Las redes bayesianas son:",
+          "opciones": [
+            "Listas de texto",
+            "Sensores",
+            "Modelos gráficos",
+            "Hardware"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 18,
+          "pregunta": "La probabilidad a priori es:",
+          "opciones": [
+            "Lo que sabemos tras ver datos",
+            "Lo que sabemos antes de la evidencia",
+            "Siempre cero",
+            "Imposible de calcular"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 19,
+          "pregunta": "La probabilidad a posteriori se obtiene:",
+          "opciones": [
+            "Borrando la KB",
+            "Al inicio",
+            "Por azar",
+            "Tras aplicar la evidencia al conocimiento previo"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 20,
+          "pregunta": "El razonamiento permite al agente:",
+          "opciones": [
+            "No usar sensores",
+            "Tomar decisiones informadas bajo incertidumbre",
+            "Ser más inteligente que el humano",
+            "Dormir"
+          ],
+          "correcta": 1
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nombre": "Tema 5: Planificación",
+      "descripcion": "Generación de secuencias de acciones",
+      "preguntas": [
+        {
+          "id": 1,
+          "pregunta": "¿Cómo se definen los estados en planificación?",
+          "opciones": [
+            "Mediante variables y literales",
+            "Como números enteros",
+            "Como nodos atómicos",
+            "No se definen"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 2,
+          "pregunta": "En planificación, una acción tiene:",
+          "opciones": [
+            "Nada",
+            "Precondiciones y efectos",
+            "Solo efectos",
+            "Solo nombre"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 3,
+          "pregunta": "El lenguaje STRIPS usa:",
+          "opciones": [
+            "Lógica de primer orden compleja",
+            "Probabilidades bayesianas",
+            "Listas de añadir y eliminar literales",
+            "Redes neuronales"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 4,
+          "pregunta": "¿Qué es la búsqueda retrospectiva (regresión)?",
+          "opciones": [
+            "Desde la meta hacia el estado inicial",
+            "Desde inicio a meta",
+            "Búsqueda aleatoria",
+            "Repetir acciones"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 5,
+          "pregunta": "La planificación jerárquica (HTN) se basa en:",
+          "opciones": [
+            "Búsqueda local",
+            "Descomposición de tareas complejas en subtareas",
+            "Lógica difusa",
+            "Acciones atómicas"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 6,
+          "pregunta": "Un plan es:",
+          "opciones": [
+            "Una secuencia de acciones que lleva a la meta",
+            "Un sensor",
+            "Una sola acción",
+            "Un estado inicial"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 7,
+          "pregunta": "La planificación se diferencia de la búsqueda en que:",
+          "opciones": [
+            "Es más lenta",
+            "No usa metas",
+            "Usa más memoria",
+            "Abre la estructura interna de los estados"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 8,
+          "pregunta": "En STRIPS, los efectos 'Añadir' indican:",
+          "opciones": [
+            "Nuevas metas",
+            "Hechos que dejan de ser ciertos",
+            "Errores",
+            "Hechos que pasan a ser ciertos tras la acción"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 9,
+          "pregunta": "Las precondiciones deben ser:",
+          "opciones": [
+            "Numéricas",
+            "Falsas para actuar",
+            "Verdaderas en el estado actual para aplicar la acción",
+            "Ignoradas"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 10,
+          "pregunta": "El 'Espacio de planes' busca:",
+          "opciones": [
+            "Borrando acciones",
+            "Usando azar",
+            "Refinar un plan parcial hasta que sea completo",
+            "En el espacio de estados"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 11,
+          "pregunta": "La planificación de orden parcial permite:",
+          "opciones": [
+            "Solo una acción a la vez",
+            "Usar solo un sensor",
+            "No tener meta",
+            "Acciones sin un orden estrictamente lineal si son independientes"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 12,
+          "pregunta": "Un problema de planificación incluye:",
+          "opciones": [
+            "Solo sensores",
+            "Solo hardware",
+            "Memoria RAM",
+            "Estado inicial, meta y acciones"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 13,
+          "pregunta": "La heurística en planificación ayuda a:",
+          "opciones": [
+            "Gastar más tiempo",
+            "Eliminar acciones",
+            "Estimar la distancia a la meta",
+            "Limpiar sensores"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 14,
+          "pregunta": "El algoritmo Graphplan usa:",
+          "opciones": [
+            "Lógica bayesiana",
+            "Grafos de planificación con niveles de estado y acción",
+            "Búsqueda local",
+            "Redes de neuronas"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 15,
+          "pregunta": "Los 'mutex' en Graphplan indican:",
+          "opciones": [
+            "El final del plan",
+            "Acciones compatibles",
+            "El inicio del plan",
+            "Acciones o estados mutuamente excluyentes"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 16,
+          "pregunta": "La planificación en mundos reales debe manejar:",
+          "opciones": [
+            "Incertidumbre y tiempo",
+            "Nada",
+            "Solo lógica pura",
+            "Solo texto"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 17,
+          "pregunta": "Un planificador condicional:",
+          "opciones": [
+            "Tiene planes para distintas contingencias",
+            "No usa variables",
+            "Solo tiene un camino",
+            "No razona"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 18,
+          "pregunta": "La replanificación ocurre cuando:",
+          "opciones": [
+            "Se acaba la batería",
+            "El agente llega a la meta",
+            "Todo sale bien",
+            "La ejecución falla o el mundo cambia inesperadamente"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 19,
+          "pregunta": "En planificación, los literales negativos en efectos 'Eliminar':",
+          "opciones": [
+            "Son opcionales",
+            "Son errores de sintaxis",
+            "Hacen la KB más grande",
+            "Representan hechos que ya no son válidos"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 20,
+          "pregunta": "La meta en planificación suele ser:",
+          "opciones": [
+            "Una conjunción de literales (meta parcial)",
+            "Un sensor",
+            "Un estado completo",
+            "Un número"
+          ],
+          "correcta": 0
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "nombre": "Tema 6: Fundamentos e Historia",
+      "descripcion": "Precursores y evolución de la IA",
+      "preguntas": [
+        {
+          "id": 1,
+          "pregunta": "¿Qué propuso Turing en 1950 como criterio de inteligencia?",
+          "opciones": [
+            "Las leyes de la robótica",
+            "El Test de Turing (Juego de la imitación)",
+            "El microchip",
+            "La lógica booleana"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 2,
+          "pregunta": "¿Qué establece la Ley de Hebb (1949)?",
+          "opciones": [
+            "La conexión entre neuronas se refuerza si se activan simultáneamente",
+            "El cerebro es digital",
+            "La IA es peligrosa",
+            "Las máquinas no pueden pensar"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 3,
+          "pregunta": "¿En qué año se acuñó el término 'Inteligencia Artificial'?",
+          "opciones": [
+            "1969",
+            "1956 (Dartmouth)",
+            "1943",
+            "1950"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 4,
+          "pregunta": "¿Quiénes demostraron que cualquier ley de E/S podía modelarse con neuronas formales?",
+          "opciones": [
+            "Minsky y Papert",
+            "Turing y Von Neumann",
+            "Cajal y Hebb",
+            "McCulloch y Pitts"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 5,
+          "pregunta": "¿Qué causó el primer 'Invierno de la IA'?",
+          "opciones": [
+            "El éxito de los sistemas expertos",
+            "Falta de electricidad",
+            "La invención de Internet",
+            "Informe Lighthill y críticas al Perceptrón"
+          ],
+          "correcta": 3
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "nombre": "Tema 7: La Neurona Formal",
+      "descripcion": "Modelado de la unidad de procesamiento",
+      "preguntas": [
+        {
+          "id": 1,
+          "pregunta": "¿Cuál es la función del sumatorio en la neurona formal?",
+          "opciones": [
+            "Activar el bias",
+            "Borrar los pesos",
+            "Calcular la entrada neta (suma ponderada)",
+            "Multiplicar la salida"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 2,
+          "pregunta": "Los pesos sinápticos (Wij) representan:",
+          "opciones": [
+            "La función de activación",
+            "La intensidad de la conexión",
+            "La velocidad de la red",
+            "El número de neuronas"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 3,
+          "pregunta": "Un peso negativo (Wij < 0) indica una conexión:",
+          "opciones": [
+            "Excitatoria",
+            "Inexistente",
+            "Neutral",
+            "Inhibitoria"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 4,
+          "pregunta": "¿Qué es el Bias o umbral?",
+          "opciones": [
+            "Una entrada variable",
+            "Un tipo de neurona",
+            "La salida final",
+            "Un valor constante que ajusta la sensibilidad de activación"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 5,
+          "pregunta": "La función de transferencia (o activación) sirve para:",
+          "opciones": [
+            "Cambiar los pesos",
+            "Sumar las entradas",
+            "Determinar la salida de la neurona según la entrada neta",
+            "Guardar memoria"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 6,
+          "pregunta": "En la analogía biológica, las dendritas equivalen a:",
+          "opciones": [
+            "El cuerpo celular",
+            "El núcleo",
+            "Las entradas de la neurona formal",
+            "Las salidas"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 7,
+          "pregunta": "La salida de una neurona formal suele ser:",
+          "opciones": [
+            "Un valor escalar (habitualmente entre 0 y 1)",
+            "Una imagen",
+            "Un texto",
+            "Un vector complejo"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 8,
+          "pregunta": "Una neurona con función de paso (escalón) produce salidas:",
+          "opciones": [
+            "Nulas",
+            "Binarias (0 o 1)",
+            "Continuas",
+            "Probabilísticas"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 9,
+          "pregunta": "¿Qué parte biológica representa el axón?",
+          "opciones": [
+            "Procesador central",
+            "Canal de salida de la señal",
+            "Almacén de energía",
+            "Entrada"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 10,
+          "pregunta": "El modelo de McCulloch-Pitts (1943) era:",
+          "opciones": [
+            "Solo biológico",
+            "Digital/Lógico",
+            "Analógico",
+            "Inútil"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 11,
+          "pregunta": "La entrada neta es la suma de entradas por pesos más:",
+          "opciones": [
+            "El bias (umbral)",
+            "La salida anterior",
+            "El error",
+            "Cero"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 12,
+          "pregunta": "Las RNA son robustas a:",
+          "opciones": [
+            "Ruido y fallos de elementos",
+            "Datos perfectos",
+            "El vacío",
+            "La lógica pura"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 13,
+          "pregunta": "El aprendizaje en una neurona implica:",
+          "opciones": [
+            "Cambiar el nombre del agente",
+            "Cambiar la arquitectura",
+            "Reiniciar los sensores",
+            "Ajustar los valores de los pesos"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 14,
+          "pregunta": "Una conexión excitatoria tiene un peso:",
+          "opciones": [
+            "Positivo",
+            "Infinito",
+            "Cero",
+            "Negativo"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 15,
+          "pregunta": "La neurona formal es una unidad de:",
+          "opciones": [
+            "Percepción visual",
+            "Almacenamiento masivo",
+            "Procesamiento elemental",
+            "Acción física"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 16,
+          "pregunta": "La función sigmoidea es popular porque es:",
+          "opciones": [
+            "Solo para lógica",
+            "No lineal y derivable",
+            "Lineal",
+            "Difícil de calcular"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 17,
+          "pregunta": "Sin la función de activación, la neurona sería:",
+          "opciones": [
+            "Incapaz de sumar",
+            "Más inteligente",
+            "Un simple operador lineal",
+            "Un sensor térmico"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 18,
+          "pregunta": "El término 'Sinapsis' en RNA se modela como:",
+          "opciones": [
+            "Un sesgo",
+            "Un peso Wij",
+            "Una neurona oculta",
+            "Un cable"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 19,
+          "pregunta": "Las neuronas formales se agrupan en:",
+          "opciones": [
+            "Cajas",
+            "Metas",
+            "Capas",
+            "Archivos"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 20,
+          "pregunta": "El objetivo de modelar la neurona es:",
+          "opciones": [
+            "Crear hardware caro",
+            "Emular capacidades de procesamiento biológico",
+            "Sustituir el cerebro",
+            "Dibujar diagramas"
+          ],
+          "correcta": 1
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "nombre": "Tema 8: Redes Alimentadas hacia Delante (MLP)",
+      "descripcion": "Perceptrón multicapa y aprendizaje supervisado",
+      "preguntas": [
+        {
+          "id": 1,
+          "pregunta": "¿Qué es el Perceptrón Multicapa (MLP)?",
+          "opciones": [
+            "Una red sin capas ocultas",
+            "Un sensor de luz",
+            "Una red recurrente",
+            "Una red con una o más capas ocultas y conexiones hacia delante"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 2,
+          "pregunta": "¿Cuál es el algoritmo de entrenamiento estándar para MLP?",
+          "opciones": [
+            "Retropropagación (Backpropagation)",
+            "Búsqueda local",
+            "Algoritmos genéticos",
+            "Lógica bayesiana"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 3,
+          "pregunta": "El 'Sobreentrenamiento' (overfitting) ocurre cuando:",
+          "opciones": [
+            "La red memoriza los datos pero pierde generalización",
+            "La red es muy pequeña",
+            "Se acaban los datos",
+            "La red no aprende nada"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 4,
+          "pregunta": "¿Para qué sirve el conjunto de 'Validación'?",
+          "opciones": [
+            "Evaluar la red final una sola vez",
+            "No sirve para nada",
+            "Supervisar el entrenamiento y pararlo si hay overfitting",
+            "Entrenar los pesos directamente"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 5,
+          "pregunta": "El conjunto de 'Test' se utiliza para:",
+          "opciones": [
+            "Analizar la capacidad de generalización tras el entrenamiento",
+            "Guíar el proceso de aprendizaje",
+            "Ajustar los pesos",
+            "Borrar la red"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 6,
+          "pregunta": "¿Qué función de activación se usa habitualmente para clasificación multiclase en la salida?",
+          "opciones": [
+            "Tansig",
+            "Lineal",
+            "Softmax",
+            "Hardlim"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 7,
+          "pregunta": "La capa de entrada de una RNA:",
+          "opciones": [
+            "Solo almacena y distribuye los valores de entrada",
+            "Siempre es no lineal",
+            "Realiza cálculos complejos",
+            "Tiene bias"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 8,
+          "pregunta": "Cuanto más flexible sea una RNA:",
+          "opciones": [
+            "Es determinista",
+            "Es más pequeña",
+            "Más patrones de entrenamiento requiere",
+            "Menos datos necesita"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 9,
+          "pregunta": "En Backpropagation, el error se propaga:",
+          "opciones": [
+            "Al azar",
+            "Solo en la capa oculta",
+            "Hacia delante",
+            "Desde la salida hacia la entrada para ajustar pesos"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 10,
+          "pregunta": "Una RNA con capas ocultas lineales es equivalente a:",
+          "opciones": [
+            "Un sistema experto",
+            "Una red más potente",
+            "Un mapa de Kohonen",
+            "Una red sin capas ocultas (lineal)"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 11,
+          "pregunta": "La tasa de aprendizaje (learning rate) controla:",
+          "opciones": [
+            "El número de neuronas",
+            "El color de la red",
+            "La calidad de los sensores",
+            "El tamaño del ajuste de los pesos en cada paso"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 12,
+          "pregunta": "El objetivo del aprendizaje supervisado es:",
+          "opciones": [
+            "Minimizar la diferencia entre la salida real y la deseada",
+            "Aprender sin guía",
+            "Agrupar datos",
+            "Borrar la memoria"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 13,
+          "pregunta": "Un MLP puede aproximar cualquier función continua si:",
+          "opciones": [
+            "Tiene suficientes neuronas ocultas y activación no lineal",
+            "No tiene capas",
+            "Es lineal",
+            "Es muy pequeño"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 14,
+          "pregunta": "¿Qué indica un error cuadrático medio (MSE) bajo?",
+          "opciones": [
+            "La red es demasiado grande",
+            "La red se ajusta bien a los datos de entrenamiento",
+            "La red está mal entrenada",
+            "El bias es cero"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 15,
+          "pregunta": "La fase de 'Forward' en un MLP consiste en:",
+          "opciones": [
+            "Borrar datos",
+            "Mover el robot",
+            "Ajustar pesos",
+            "Pasar la entrada a través de las capas hasta la salida"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 16,
+          "pregunta": "Las capas ocultas permiten a la red:",
+          "opciones": [
+            "No pensar",
+            "Ver mejor",
+            "Extraer características y manejar no linealidad",
+            "Gastar menos energía"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 17,
+          "pregunta": "La arquitectura 'alimentada hacia delante' significa:",
+          "opciones": [
+            "Se usa solo un procesador",
+            "El agente camina hacia delante",
+            "Hay ciclos",
+            "No hay retroalimentación entre capas (flujo unidireccional)"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 18,
+          "pregunta": "Si la red tiene baja capacidad de generalización:",
+          "opciones": [
+            "Acierta en todos los datos nuevos",
+            "Es perfecta",
+            "Falla en datos no vistos durante el entrenamiento",
+            "No necesita test"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 19,
+          "pregunta": "La función Logsig (sigmoidal) devuelve valores en:",
+          "opciones": [
+            "",
+            "[-inf, +inf]",
+            "[1]",
+            "[-1, 1]"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 20,
+          "pregunta": "El entrenamiento termina cuando:",
+          "opciones": [
+            "El error es aceptable o se alcanza el límite de iteraciones",
+            "El agente se cansa",
+            "Se borra la KB",
+            "La red se vuelve lineal"
+          ],
+          "correcta": 0
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "nombre": "Tema 9: Aprendizaje Competitivo y SOM",
+      "descripcion": "Redes autoorganizativas no supervisadas",
+      "preguntas": [
+        {
+          "id": 1,
+          "pregunta": "¿Qué caracteriza al aprendizaje no supervisado?",
+          "opciones": [
+            "Se basa en reglas lógicas",
+            "No existe salida deseada ni observador global",
+            "Es más rápido",
+            "Hay un profesor externo"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 2,
+          "pregunta": "¿Qué es el 'Comportamiento emergente'?",
+          "opciones": [
+            "Errores en la red",
+            "El inicio del entrenamiento",
+            "Una acción del agente",
+            "Características inesperadas surgidas de la interacción de componentes"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 3,
+          "pregunta": "En las redes autoorganizativas, la red:",
+          "opciones": [
+            "Usa solo lógica booleana",
+            "Crea su propia representación de la información recibida",
+            "No tiene pesos",
+            "Es programada por humanos paso a paso"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 4,
+          "pregunta": "El aprendizaje competitivo se basa en:",
+          "opciones": [
+            "Todas las neuronas aprenden igual",
+            "Una neurona ganadora (la más cercana a la entrada) se actualiza",
+            "La eliminación de pesos",
+            "La lucha de los agentes"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 5,
+          "pregunta": "¿Para qué se usan los mapas SOM (Kohonen)?",
+          "opciones": [
+            "Para organizar y visualizar datos de gran dimensión en 2D",
+            "Para sumar números",
+            "Para jugar al ajedrez",
+            "Para disparar al Wumpus"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 6,
+          "pregunta": "En un SOM, las neuronas vecinas a la ganadora:",
+          "opciones": [
+            "También se actualizan para parecerse a la entrada",
+            "Se desactivan",
+            "Se borran",
+            "No hacen nada"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 7,
+          "pregunta": "La redundancia en los datos de entrada es necesaria para: ",
+          "opciones": [
+            "No es necesaria",
+            "Encontrar características y patrones",
+            "Confundir a la red",
+            "Ahorrar memoria"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 8,
+          "pregunta": "El método WebSOM sirve para:",
+          "opciones": [
+            "Organizar masivamente colecciones de documentos por temática",
+            "Hacer búsquedas AND-OR",
+            "Cifrar la web",
+            "Controlar naves espaciales"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 9,
+          "pregunta": "¿Qué problema resuelve un SOM al organizar fotos?",
+          "opciones": [
+            "Las envía por email",
+            "Las borra",
+            "Las agrupa automáticamente por rasgos y similitudes",
+            "Las imprime"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 10,
+          "pregunta": "En aprendizaje competitivo, el prototipo es:",
+          "opciones": [
+            "El valor del bias",
+            "El vector de pesos de la neurona",
+            "Un sensor",
+            "La salida deseada"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 11,
+          "pregunta": "La 'Topología' en un SOM define:",
+          "opciones": [
+            "El lenguaje formal",
+            "La vecindad y relación espacial entre neuronas",
+            "El número de capas ocultas",
+            "La velocidad de la red"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 12,
+          "pregunta": "Las redes competitivas son ideales para:",
+          "opciones": [
+            "Regresión lineal",
+            "Clustering (agrupamiento) y reducción de dimensionalidad",
+            "Planificación",
+            "Inferencia lógica"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 13,
+          "pregunta": "Un sistema autoorganizativo no tiene:",
+          "opciones": [
+            "Pesos",
+            "Neuronas",
+            "Un 'jefe' o supervisor global [32]",
+            "Entradas"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 14,
+          "pregunta": "La 'Neurona Ganadora' (BMU) es la que:",
+          "opciones": [
+            "Está al final de la red",
+            "Se activa primero",
+            "Tiene el peso más bajo",
+            "Tiene el vector de pesos más similar a la entrada"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 15,
+          "pregunta": "Durante el entrenamiento SOM, el radio de vecindad:",
+          "opciones": [
+            "Disminuye con el tiempo",
+            "Aumenta",
+            "Es constante",
+            "Es infinito"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 16,
+          "pregunta": "La autoorganización emula procesos de:",
+          "opciones": [
+            "El corazón",
+            "La corteza cerebral",
+            "Los músculos",
+            "El sistema digestivo"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 17,
+          "pregunta": "Un mapa SOM conserva:",
+          "opciones": [
+            "Las reglas lógicas",
+            "Solo el primer dato",
+            "Las relaciones de vecindad topológica de los datos",
+            "El ruido"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 18,
+          "pregunta": "Las 'Growing Cell Structures' (GCS) se diferencian por:",
+          "opciones": [
+            "Ser estáticas",
+            "Poder insertar o eliminar neuronas durante el aprendizaje",
+            "No tener pesos",
+            "Ser supervisadas"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 19,
+          "pregunta": "En el aprendizaje competitivo, se dice que:",
+          "opciones": [
+            "Todos ganan",
+            "Nadie aprende",
+            "The winner takes all (el ganador se lo lleva todo)",
+            "Se usa backpropagation"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 20,
+          "pregunta": "Las RNA autoorganizativas localizan información en:",
+          "opciones": [
+            "Un servidor externo",
+            "El test de meta",
+            "La mente del humano",
+            "Los propios datos de entrada (redundancia)"
+          ],
+          "correcta": 3
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "nombre": "Tema 10: Computación Evolutiva",
+      "descripcion": "Algoritmos genéticos y vida artificial",
+      "preguntas": [
+        {
+          "id": 1,
+          "pregunta": "¿Qué es la Computación Evolutiva?",
+          "opciones": [
+            "Lógica difusa",
+            "Programación manual",
+            "Redes neuronales simples",
+            "Algoritmos inspirados en la selección natural y la genética"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 2,
+          "pregunta": "En un Algoritmo Genético (AG), la 'Aptitud' (Fitness) mide:",
+          "opciones": [
+            "La velocidad del individuo",
+            "Cómo de buena es una solución para el problema",
+            "La tasa de mutación",
+            "El número de bits"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 3,
+          "pregunta": "¿Qué hace el operador de 'Cruce' (Crossover)?",
+          "opciones": [
+            "Elimina individuos",
+            "Intercambia material genético entre dos padres para crear hijos",
+            "Reinicia la población",
+            "Cambia un bit al azar"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 4,
+          "pregunta": "El operador de 'Mutación' sirve para:",
+          "opciones": [
+            "No tiene función real",
+            "Hacer el proceso más lento",
+            "Copiar a los mejores",
+            "Introducir variabilidad y evitar mínimos locales"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 5,
+          "pregunta": "¿Qué es el 'Elitismo'?",
+          "opciones": [
+            "Asegurar que los mejores individuos pasen intactos a la siguiente generación",
+            "Favorecer a los nuevos",
+            "Usar solo un padre",
+            "Eliminar a los más aptos"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 6,
+          "pregunta": "La 'Selección por Ruleta' asigna probabilidad según:",
+          "opciones": [
+            "La aptitud proporcional de cada individuo",
+            "El azar puro",
+            "El orden alfabético",
+            "La edad del individuo"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 7,
+          "pregunta": "Un 'Cromosoma' en AG representa:",
+          "opciones": [
+            "Una regla lógica",
+            "Una neurona",
+            "Una solución candidata codificada",
+            "Un sensor"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 8,
+          "pregunta": "La Programación Genética (PG) de Koza evoluciona:",
+          "opciones": [
+            "Cadenas de bits",
+            "Pesos de redes",
+            "Árboles que representan programas de computador",
+            "Mapas SOM"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 9,
+          "pregunta": "En el 'Juego de la Vida', una célula viva muere por soledad si:",
+          "opciones": [
+            "Tiene 8 vecinas",
+            "Tiene 3 vecinas",
+            "Tiene 2 vecinas",
+            "Tiene menos de 2 vecinas vivas"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 10,
+          "pregunta": "La Vida Artificial estudia:",
+          "opciones": [
+            "Solo virus",
+            "Bases de datos",
+            "Sistemas complejos que exhiben propiedades de seres vivos",
+            "Solo robots"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 11,
+          "pregunta": "El 'Viajante' es un problema de:",
+          "opciones": [
+            "Inferencia",
+            "Percepción",
+            "Clasificación",
+            "Optimización"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 12,
+          "pregunta": "Un AG termina cuando:",
+          "opciones": [
+            "Se apaga el PC",
+            "Todos son iguales",
+            "La mutación es cero",
+            "Se halla solución óptima o se alcanza el máximo de generaciones"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 13,
+          "pregunta": "La selección por 'Torneo' consiste en:",
+          "opciones": [
+            "Usar una ruleta",
+            "No seleccionar",
+            "Elegir al mejor de un subgrupo aleatorio",
+            "Elegir al azar"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 14,
+          "pregunta": "Los AG fueron popularizados por:",
+          "opciones": [
+            "Turing",
+            "John Holland",
+            "Norbert Wiener",
+            "McCulloch"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 15,
+          "pregunta": "Un individuo en la población es:",
+          "opciones": [
+            "Un sensor",
+            "Un punto en el espacio de búsqueda",
+            "Una regla",
+            "Un bias"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 16,
+          "pregunta": "La convergencia prematura ocurre cuando:",
+          "opciones": [
+            "Hay mucha mutación",
+            "La población se vuelve homogénea antes de hallar el óptimo",
+            "Se encuentra el óptimo",
+            "La red es grande"
+          ],
+          "correcta": 1
+        },
+        {
+          "id": 17,
+          "pregunta": "La codificación binaria usa:",
+          "opciones": [
+            "Colores",
+            "Letras",
+            "Cadenas de 0s y 1s",
+            "Sonidos"
+          ],
+          "correcta": 2
+        },
+        {
+          "id": 18,
+          "pregunta": "¿Qué es una 'Generación'?",
+          "opciones": [
+            "Una iteración completa del algoritmo",
+            "Un tipo de mutación",
+            "El coste total",
+            "El estado inicial"
+          ],
+          "correcta": 0
+        },
+        {
+          "id": 19,
+          "pregunta": "La computación evolutiva es parte de la IA:",
+          "opciones": [
+            "Simbólica",
+            "No es IA",
+            "Lógica",
+            "Bioinspirada / Subsimbólica"
+          ],
+          "correcta": 3
+        },
+        {
+          "id": 20,
+          "pregunta": "La mutación excesiva puede:",
+          "opciones": [
+            "Borrar la fitness",
+            "Convertir la búsqueda en un paseo aleatorio ineficiente",
+            "Encontrar la meta rápido",
+            "Ayudar siempre"
+          ],
+          "correcta": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+.quiz-screen {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  animation: fadeInUp 0.35s ease;
+}
+
+.quiz-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.btn-back {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-back:hover {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border-color: var(--border-hover);
+}
+
+.quiz-tema-badge {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-light);
+  background: rgba(124, 58, 237, 0.12);
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  padding: 0.3rem 0.85rem;
+  border-radius: 99px;
+}
+
+.feedback-banner {
+  margin-top: 1.25rem;
+  padding: 0.9rem 1.25rem;
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  animation: fadeInUp 0.25s ease;
+  line-height: 1.5;
+}
+
+.feedback-banner[data-correct="true"] {
+  background: var(--success-bg);
+  border: 1px solid var(--success-border);
+  color: var(--success);
+}
+
+.feedback-banner[data-correct="false"] {
+  background: var(--error-bg);
+  border: 1px solid var(--error-border);
+  color: #fca5a5;
+}
+
+.quiz-footer {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
+  border: none;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 20px var(--accent-glow);
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px var(--accent-glow);
+}
+
+.btn-primary:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
